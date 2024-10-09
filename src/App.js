@@ -1,8 +1,18 @@
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import Card from "./components/Card";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <Hero primaryText={"Hostechnology"} secondaryText={"We serve peole who serve people"} />
+      <div className="py-10 flex justify-center bg-error flex-wrap space-x-8">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      <Footer />
+    </>
   )
 }
 
