@@ -1,6 +1,6 @@
 export default function Nav() {
     return (
-        <div className="navbar bg-secondary">
+        <div className="navbar bg-primary">
             <div className="flex-1">
                 <a className="btn btn-ghost font-montserrat text-white text-xl" href="/">Hostechnology</a>
             </div>

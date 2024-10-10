@@ -8,9 +8,9 @@ import { ContactForm } from "./ContactForm";
 const HeroTwo = ({primaryText, secondaryText}) => {
     return (
         <div className="bg-base-200 min-h-screen">
-            <div className="max-w-full flex-col">
-                <div className="md:w-1/2 place-content-center">
-                    <h1 class="text-5xl md:text-3xl font-bold tracking-tight secondary sm:text-4xl md:text-5xl p-6 md:p-12">
+            <div className="max-w-7xl lg:flex lg:flex-row mx-auto">
+                <div className="lg:w-1/2 place-content-center lg:p-12">
+                    <h1 class="text-5xl md:text-6xl font-bold tracking-tight secondary sm:text-4xl lg:text-6xl p-6">
                         <span class="block">
                         Hi!<br />I'm Shae Smith.<br  />I will be an<br />
                         <span class="text-accent">
@@ -21,11 +21,11 @@ const HeroTwo = ({primaryText, secondaryText}) => {
                     </h1>
                     <ContactForm />
                 </div>
-                <div className="md:w-1/2 flex md:justify-center">
+                <div className="lg:w-1/2 lg:place-content-center">
                     <img
-                        src={`${process.env.PUBLIC_URL}/images/shae_concierge_1.png`}
+                        src={`${process.env.PUBLIC_URL}/images/shae_concierge_2.png`}
                         alt="Hand ringing concierge bell"
-                        className="md:w-3/4"
+                        className=""
                     />
                 </div>
             </div>

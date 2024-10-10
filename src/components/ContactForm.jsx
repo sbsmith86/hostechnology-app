@@ -31,7 +31,7 @@ export const ContactForm = () => {
             </div>
             <input type='text' placeholder='Subject' name="subject" className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
             <textarea placeholder='Message' name="message" rows="6" className="w-full rounded-md px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm pt-3 outline-blue-500"></textarea>
-            <input type="submit" value="Send" className="text-white bg-secondary hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full cursor-pointer" />
+            <input type="submit" value="Send" className="text-white bg-primary hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full cursor-pointer" />
         </form>
     </div>
   );
