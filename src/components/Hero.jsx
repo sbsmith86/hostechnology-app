@@ -10,7 +10,7 @@ export default function Hero({primaryText, secondaryText}) {
         style={{
             backgroundImage: `url(${headerImage})`,
         }}>
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-transparent"></div>
             <div className="hero-content text-neutral-content text-center flex justify-start w-full py-16">
                 <div>
                     <div className="mb-5 flex justify-center">

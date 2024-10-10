@@ -23,7 +23,7 @@ export const ContactForm = () => {
 
   return (
     <div className="p-4 mx-auto max-w-xl">
-        <h1 className="text-3xl text-gray-800 font-extrabold text-center text-secondary">How can I help?</h1>
+        <h1 className="text-3xl text-gray-800 font-extrabold text-center text-primary">How can I help?</h1>
         <form className="mt-8 space-y-4" ref={form} onSubmit={sendEmail}>
             <div className='flex space-x-4'>
                 <input type='text' placeholder='Name' name="user_name" className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
