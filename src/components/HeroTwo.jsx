@@ -10,15 +10,18 @@ const HeroTwo = ({primaryText, secondaryText}) => {
         <div className="bg-base-200 min-h-screen">
             <div className="max-w-7xl lg:flex lg:flex-row mx-auto">
                 <div className="lg:w-1/2 place-content-center lg:p-12">
-                    <h1 class="text-5xl md:text-6xl font-bold tracking-tight secondary sm:text-4xl lg:text-6xl p-6">
-                        <span class="block">
-                        Hi!<br />I'm Shae Smith.<br  />I will be an<br />
-                        <span class="text-accent">
-                        embedded software engineer<br />
-                        </span>
-                        on your team.
-                        </span>
-                    </h1>
+                    <div className="p-6">
+                        <h1 class="text-5xl md:text-6xl font-bold tracking-tight secondary sm:text-4xl lg:text-6xl">
+                            <span class="block">
+                            Hi!<br />I'm Shae Smith.<br  />I will be an<br />
+                            <span class="text-accent">
+                            embedded software engineer<br />
+                            </span>
+                            on your team.
+                            </span>
+                        </h1>
+                        <p className="text-md font-bold py-4">Expert React, Node, and PHP development and support</p>
+                    </div>
                     <ContactForm />
                 </div>
                 <div className="lg:w-1/2 lg:place-content-center">
