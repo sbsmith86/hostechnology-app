@@ -1,12 +1,14 @@
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
+import Nav from "./components/Nav";
 
 export default function App() {
   return (
     <>
+      <Nav />
       <Hero primaryText={"Hostechnology"} secondaryText={"We serve peole who serve people"} />
-      <div className="py-10 flex justify-center bg-error flex-wrap space-x-8">
+      <div className="py-10 flex justify-center flex-wrap space-x-8">
           <Card />
           <Card />
           <Card />

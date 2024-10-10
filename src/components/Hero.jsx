@@ -1,6 +1,7 @@
 
 
 import headerImage from "../images/concierge-bell-header-one.jpg";
+import { ContactForm } from "./ContactForm";
 
 export default function Hero({primaryText, secondaryText}) {
     return (
@@ -10,16 +11,18 @@ export default function Hero({primaryText, secondaryText}) {
             backgroundImage: `url(${headerImage})`,
         }}>
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-neutral-content text-center">
-            <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hostechnology</h1>
-            <p className="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                quasi. In deleniti eaque aut repudiandae et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+            <div className="hero-content text-neutral-content text-center flex justify-start w-full py-16">
+                <div>
+                    <div className="mb-5 flex justify-center">
+                        <p className="max-w-md text-2xl font-montserrat">
+                            Hi! I'm Shae Smith and I will be an embedded software engineer for your team.
+                            <br />
+                            <span className="text-sm font-bold text-secondary">Expert React, Node, and PHP development and support</span>
+                        </p>
+                    </div>
+                    <ContactForm />
+                </div>
             </div>
-        </div>
         </div>
     )
   }

@@ -1,0 +1,38 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+export const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('hostechnology', 'contact', form.current, {
+        publicKey: 'wOhDJHGBMrTTg_pRh',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+  return (
+    <div className="p-4 mx-auto max-w-xl">
+        <h1 className="text-3xl text-gray-800 font-extrabold text-center text-secondary">How can I help?</h1>
+        <form className="mt-8 space-y-4" ref={form} onSubmit={sendEmail}>
+            <div className='flex space-x-4'>
+                <input type='text' placeholder='Name' name="user_name" className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+                <input type='email' placeholder='Email' name="user_email" className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+            </div>
+            <input type='text' placeholder='Subject' name="subject" className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+            <textarea placeholder='Message' name="message" rows="6" className="w-full rounded-md px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm pt-3 outline-blue-500"></textarea>
+            <input type="submit" value="Send" className="text-white bg-secondary hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full cursor-pointer" />
+        </form>
+    </div>
+  );
+};
