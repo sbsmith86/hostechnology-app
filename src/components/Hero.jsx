@@ -1,6 +1,7 @@
 
 
-import headerImage from "../images/concierge-bell-header-one.jpg";
+// import headerImage from "../images/concierge-bell-header-one.jpg";
+import headerImageTwo from "../images/concierge-bell-header-no-bkgrd.png";
 import { ContactForm } from "./ContactForm";
 
 export default function Hero({primaryText, secondaryText}) {
@@ -8,7 +9,7 @@ export default function Hero({primaryText, secondaryText}) {
         <div
         className="hero min-h-screen"
         style={{
-            backgroundImage: `url(${headerImage})`,
+            backgroundImage: `url(${headerImageTwo})`,
         }}>
         <div className="hero-overlay bg-transparent"></div>
             <div className="hero-content text-neutral-content text-center flex justify-start w-full py-16">

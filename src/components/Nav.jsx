@@ -2,13 +2,13 @@ export default function Nav() {
     return (
         <div className="navbar bg-secondary">
             <div className="flex-1">
-                <a className="btn btn-ghost font-montserrat text-neutral text-xl" href="/">Hostechnology</a>
+                <a className="btn btn-ghost font-montserrat text-white text-xl" href="/">Hostechnology</a>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
                     <li>
                         <a
-                            className="btn btn-ghost font-montserrat text-neutral"
+                            className="btn btn-ghost font-montserrat text-white"
                             target="_blank"
                             href="https://www.linkedin.com/in/shaebryantsmith/" rel="noreferrer">
                                 LinkedIn
