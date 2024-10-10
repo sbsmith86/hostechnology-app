@@ -7,7 +7,12 @@ export default function Nav() {
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <a>Link</a>
+                        <a
+                            className="btn btn-ghost font-montserrat text-neutral"
+                            target="_blank"
+                            href="https://www.linkedin.com/in/shaebryantsmith/" rel="noreferrer">
+                                LinkedIn
+                        </a>
                     </li>
                     {/* If I want a submenu <li>
                         <details>
