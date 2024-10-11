@@ -1,4 +1,6 @@
-export default function Nav() {
+import React from 'react';
+
+const Nav = () => {
     return (
         <div className="navbar bg-primary">
             <div className="flex-1">
@@ -28,3 +30,5 @@ export default function Nav() {
         </div>
     );
 }
+
+export default Nav;

@@ -1,10 +1,9 @@
-
-
+import React from 'react';
 // import headerImage from "../images/concierge-bell-header-one.jpg";
 import headerImageTwo from "../images/concierge-bell-header-no-bkgrd.png";
 import { ContactForm } from "./ContactForm";
 
-export default function Hero({primaryText, secondaryText}) {
+const Hero = ({primaryText, secondaryText}) => {
     return (
         <div
         className="hero min-h-screen"
@@ -26,4 +25,6 @@ export default function Hero({primaryText, secondaryText}) {
             </div>
         </div>
     )
-  }
+}
+
+export default Hero;
