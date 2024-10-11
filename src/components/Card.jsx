@@ -5,8 +5,13 @@ const Card = ({ content }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleButtonClick = () => {
-        console.log("click");
-    };
+        const contactFormElement = document.getElementById('contact-form');
+        if (contactFormElement) {
+          contactFormElement.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.error('Element with ID "contact-form" not found');
+        }
+      };
 
     return (
         <div className="bg-white flex flex-col md:flex-row md:h-auto">

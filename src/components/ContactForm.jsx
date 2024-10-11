@@ -24,7 +24,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="p-4 mx-auto max-w-xl">
+        <div className="p-4 mx-auto max-w-xl" id="contact-form">
             <h1 className="font-montserrat text-3xl text-gray-800 font-extrabold text-center text-primary">How can I help?</h1>
             <form className="mt-8 space-y-4" ref={form} onSubmit={sendEmail}>
                 <div className='flex space-x-4'>
