@@ -2,10 +2,11 @@ import React from 'react';
 
 const Nav = () => {
     return (
-        <div className="navbar bg-primary">
-            <div className="flex-1">
-                <a className="btn btn-ghost font-montserrat text-white text-xl" href="/">Hostechnology</a>
-            </div>
+        <div className="navbar bg-secondary">
+            <a className="flex-1" href="/">
+                <img src="/images/hostech-logo.png" alt="Logo" className="h-12 w-auto" />
+                <span className="font-montserrat text-white text-xl font-bold">Hostechnology</span>
+            </a>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
                     <li>
