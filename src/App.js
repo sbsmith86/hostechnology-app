@@ -2,7 +2,7 @@ import React from 'react';
 // import Hero from "./components/Hero";
 import HeroTwo from "./components/HeroTwo";
 import Footer from "./components/Footer";
-import Card from "./components/Card";
+import Tiers from "./components/Tiers";
 import Nav from "./components/Nav";
 
 export default function App() {
@@ -68,14 +68,7 @@ export default function App() {
       <div className="py-8">
         <h1 className="font-montserrat text-5xl text-gray-800 font-extrabold text-center text-primary">How would you like to work together?</h1>
       </div>
-      <div className="mx-auto px-8 lg:w-5/6 lg:flex lg:flex-col space-y-8">
-        <Card content={cardContent[0]} />
-        <div className="divider divider-neutral"></div>
-        <Card content={cardContent[1]} />
-        <div className="divider divider-neutral"></div>
-        <Card content={cardContent[2]} />
-        <div className="divider divider-neutral"></div>
-      </div>
+      <Tiers tiers={cardContent} />
       <Footer />
     </>
   )
