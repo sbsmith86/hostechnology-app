@@ -60,9 +60,13 @@ export default function App() {
     <>
       <Nav />
       <HeroTwo primaryText={"Hostechnology"} secondaryText={"We serve peole who serve people"} />
+      <div className="py-8 text-center w-3/4 mx-auto">
+        <p className='text-xl'>
+          At Hostechnology, we empower early-stage companies across all industries with expert development services tailored to their specific needs. Whether you need part-time or full-time development support, or a full-scale project built from the ground up, we have a plan to help you grow and succeed.
+        </p>
+      </div>
       <div className="py-8">
-        <h1 className="font-montserrat text-5xl text-gray-800 font-extrabold text-center text-primary">Packages</h1>
-        <p className="text-center text-sm pb-8">How would you like to work together?</p>
+        <h1 className="font-montserrat text-5xl text-gray-800 font-extrabold text-center text-primary">How would you like to work together?</h1>
       </div>
       <div className="mx-auto px-8 lg:w-5/6 lg:flex lg:flex-col space-y-8">
         <Card content={cardContent[0]} />
