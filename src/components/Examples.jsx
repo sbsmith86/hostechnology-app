@@ -3,43 +3,45 @@ import React from 'react';
 export default function Examples() {
   const examples = [
     {
-      title: "The Email Overload",
-      description: "A community organization was managing program inquiries, volunteer coordination, and partner communications across three people's inboxes. We set up a custom email parsing system using AI that automatically categorizes and routes messages into their existing workflow.",
-      result: "Cut coordination time by 60%"
+      title: "The Email Pile-Up",
+      description: "Your team is managing program inquiries, volunteer coordination, and partner communications across three different inboxes. Messages get lost, things fall through the cracks, and someone's always chasing a reply.",
+      result: "An automation that sorts, labels, and routes incoming messages so nothing gets missed — and nobody has to be the human filter."
     },
     {
-      title: "The Manual Data Entry",
-      description: "A nonprofit was manually copying intake data from forms into multiple tracking spreadsheets for reporting. One person spending hours every week on copy-paste work.",
-      result: "One script. Five minutes to run instead of five hours."
+      title: "The Copy-Paste Marathon",
+      description: "Every week, someone on your team is copying intake data from forms into multiple spreadsheets for reporting. Hours of manual work that feels pointless but has to get done.",
+      result: "A simple automation that pulls the data where it needs to go. Five minutes instead of five hours."
     },
     {
       title: "The 'We Don't Know What We Don't Know'",
-      description: "A community group knew they were inefficient but couldn't articulate where. I sat with them for two weeks, mapped their workflows, and trained them on free tools they didn't know existed.",
-      result: "No custom development needed."
+      description: "You know things are inefficient but you can't pinpoint where. You don't need a product built — you need someone to sit with your team, map out what's happening, and show you what's possible with the tools you already have.",
+      result: "Sometimes the biggest wins don't require any custom development at all."
     }
   ];
 
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
-          What This Looks Like
+        <h2 className="font-headline font-bold text-4xl md:text-5xl text-center mb-4 text-dark">
+          What This Could Look Like
         </h2>
-        <p className="text-center text-xl text-gray-600 mb-16">Real examples, real results</p>
-        
+        <p className="text-center font-mono font-bold text-sm tracking-[2px] text-brand-dark uppercase mb-16">
+          Here's the kind of work I'm built for
+        </p>
+
         <div className="max-w-5xl mx-auto space-y-8">
           {examples.map((example, index) => (
-            <div 
-              key={index} 
-              className="bg-gray-50 p-8 border-l-8 border-red-600 hover:bg-gray-100 transition-colors"
+            <div
+              key={index}
+              className="bg-brand-bg p-8 rounded-xl border-l-4 border-brand-medium hover:bg-brand-bg-alt transition-colors"
             >
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              <h3 className="font-headline font-bold text-2xl mb-4 text-dark">
                 {example.title}
               </h3>
-              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+              <p className="font-body text-lg text-body mb-4 leading-relaxed">
                 {example.description}
               </p>
-              <p className="text-xl font-bold text-red-600">
+              <p className="font-body text-xl font-bold text-brand-dark">
                 {example.result}
               </p>
             </div>

@@ -16,38 +16,36 @@ export default function WhoThisIsFor() {
   ];
 
   return (
-    <section className="py-20 bg-gray-900 text-white">
+    <section className="py-20 bg-dark text-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+        <h2 className="font-headline font-bold text-4xl md:text-5xl text-center mb-16">
           Who This Is For
         </h2>
-        
+
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-          {/* Good Fit */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-green-400">
+            <h3 className="font-headline font-bold text-2xl mb-6 text-brand-light">
               This works best for you if:
             </h3>
             <ul className="space-y-4">
               {goodFit.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-green-400 text-2xl mr-3">✓</span>
-                  <span className="text-lg">{item}</span>
+                  <span className="text-brand-light text-2xl mr-3 leading-none mt-1">&#10003;</span>
+                  <span className="font-body text-lg text-gray-300">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
-          
-          {/* Not Good Fit */}
+
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-red-400">
+            <h3 className="font-headline font-bold text-2xl mb-6 text-gray-400">
               This might not be for you if:
             </h3>
             <ul className="space-y-4">
               {notGoodFit.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-red-400 text-2xl mr-3">✗</span>
-                  <span className="text-lg">{item}</span>
+                  <span className="text-gray-500 text-2xl mr-3 leading-none mt-1">&#10007;</span>
+                  <span className="font-body text-lg text-gray-400">{item}</span>
                 </li>
               ))}
             </ul>

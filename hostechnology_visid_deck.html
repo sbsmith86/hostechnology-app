@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HosTechnology - Visual Identity Deck</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Space+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 40px;
+            page-break-after: always;
+        }
+        
+        @media (max-width: 768px) {
+            .page {
+                padding: 40px 20px;
+                min-height: auto;
+            }
+        }
+        
+        /* Cover Page */
+        .cover {
+            background: linear-gradient(135deg, #e8f5e9 0%, #dcedc8 100%);
+            border-bottom: 8px solid #8bc34a;
+        }
+        
+        .cover h1 {
+            font-family: 'Righteous', cursive;
+            font-size: 96px;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            .cover h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                letter-spacing: 2px;
+            }
+        }
+        
+        .cover .subtitle {
+            font-size: 24px;
+            color: #558b2f;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-bottom: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .cover .subtitle {
+                font-size: 16px;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        .cover .tagline {
+            font-size: 18px;
+            color: #7cb342;
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            .cover .tagline {
+                font-size: 14px;
+                letter-spacing: 2px;
+            }
+        }
+        
+        /* Section Headers */
+        .section-header {
+            background: white;
+            border-left: 8px solid #8bc34a;
+        }
+        
+        .section-header h2 {
+            font-family: 'Righteous', cursive;
+            font-size: 72px;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 36px;
+            }
+        }
+        
+        .section-header p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .section-header p {
+                font-size: 16px;
+            }
+        }
+        
+        /* Content Pages */
+        .content {
+            background: white;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1400px;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .content-full {
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        h3 {
+            font-family: 'Righteous', cursive;
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            h3 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+        
+        h4 {
+            font-size: 16px;
+            color: #8bc34a;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Logo Display */
+        .logo-showcase {
+            background: linear-gradient(135deg, #e8f5e9 0%, #dcedc8 100%);
+            padding: 80px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .logo-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid #aed581;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-card {
+                padding: 20px;
+            }
+        }
+        
+        .logo-card h5 {
+            font-size: 12px;
+            color: #7cb342;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        /* Color Swatches */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .color-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+        
+        .color-swatch {
+            aspect-ratio: 1;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .color-swatch {
+                padding: 10px;
+            }
+        }
+        
+        .color-name {
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        @media (max-width: 768px) {
+            .color-name {
+                font-size: 9px;
+            }
+        }
+        
+        .color-hex {
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .color-hex {
+                font-size: 11px;
+            }
+        }
+        
+        .color-usage {
+            font-size: 9px;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .color-usage {
+                font-size: 8px;
+            }
+        }
+        
+        /* Typography Specimens */
+        .type-specimen {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #fafafa;
+            border-radius: 12px;
+            border-left: 4px solid #8bc34a;
+        }
+        
+        @media (max-width: 768px) {
+            .type-specimen {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        .type-display {
+            margin-bottom: 12px;
+        }
+        
+        .type-info {
+            font-size: 11px;
+            color: #999;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .type-info {
+                font-size: 10px;
+            }
+        }
+        
+        /* Application Examples */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .app-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        .app-card {
+            background: #fafafa;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #e0e0e0;
+            text-align: center;
+        }
+        
+        .app-card h5 {
+            font-size: 12px;
+            color: #7cb342;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+        /* Print Styles */
+        @media print {
+            .page {
+                page-break-after: always;
+            }
+        }
+        
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: COVER -->
+    <div class="page cover">
+        <svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 60px;">
+            <defs>
+                <linearGradient id="coverGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#aed581" />
+                    <stop offset="50%" style="stop-color:#9ccc65" />
+                    <stop offset="100%" style="stop-color:#8bc34a" />
+                </linearGradient>
+            </defs>
+            <g transform="translate(70, 35)">
+                <path d="M 0 0 L 28 21 L 0 49 L -28 21 Z" fill="url(#coverGreen)" stroke="#1a1a1a" stroke-width="2.5" stroke-linejoin="miter"/>
+                <path d="M 0 21 L 21 35 L 0 56 L -21 35 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="miter"/>
+                <path d="M 0 35 L 14 45 L 0 60 L -14 45 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="miter"/>
+            </g>
+        </svg>
+        
+        <h1>HosTechnology</h1>
+        <div class="subtitle">VISUAL IDENTITY</div>
+        <div class="tagline">AUTOMATION FOR COMMUNITY</div>
+    </div>
+    
+    <!-- PAGE 2: MISSION -->
+    <div class="page section-header">
+        <div style="max-width: 900px;">
+            <h2>Mission</h2>
+            <p style="font-size: 20px; line-height: 1.8; color: #444;">
+                We believe automation should amplify community power, not replace it. Using modern technology practices, small teams can scale their impact without scaling their headcount. HosTechnology builds custom automation solutions that make doing more with less a reality.
+            </p>
+        </div>
+    </div>
+    
+    <!-- PAGE 3: PRIMARY MARK -->
+    <div class="page content">
+        <div class="content-full">
+            <h3>Primary Mark</h3>
+            <div class="logo-showcase">
+                <svg width="600" height="240" viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="primaryGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#aed581" />
+                            <stop offset="50%" style="stop-color:#9ccc65" />
+                            <stop offset="100%" style="stop-color:#8bc34a" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <g transform="translate(300, 48)">
+                        <path d="M 0 0 L 24 18 L 0 42 L -24 18 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="miter"/>
+                        <path d="M 0 18 L 18 30 L 0 48 L -18 30 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="miter"/>
+                        <path d="M 0 30 L 12 38 L 0 52 L -12 38 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="miter"/>
+                    </g>
+                    
+                    <g transform="translate(300, 156)">
+                        <text x="0" y="0" font-family="'Righteous', cursive" font-size="62" fill="#1a1a1a" text-anchor="middle" letter-spacing="2">HosTechnology</text>
+                        <text x="0" y="36" font-family="'Space Mono', monospace" font-size="12" font-weight="700" fill="#7cb342" text-anchor="middle" letter-spacing="3">AUTOMATION FOR COMMUNITY</text>
+                    </g>
+                </svg>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <h4>Mark Concept</h4>
+                <p>Three stacked diamonds represent potential becoming scaled impact. The geometric forms merge organic growth (solarpunk ethos) with technical precision (automation expertise). The upward growth pattern symbolizes small teams achieving exponential capacity through technology.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 4: LOGO VARIATIONS -->
+    <div class="page content">
+        <div class="content-full">
+            <h3>Logo Variations</h3>
+            <div class="logo-grid">
+                <!-- Horizontal -->
+                <div class="logo-card">
+                    <h5>Horizontal Lockup</h5>
+                    <svg width="420" height="80" viewBox="0 0 420 80" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Diamonds with matching stroke widths -->
+                        <g transform="translate(35, 40)">
+                            <path d="M 0 -20 L 12 -10 L 0 4 L -12 -10 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="miter"/>
+                            <path d="M 0 -10 L 9 -2 L 0 10 L -9 -2 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="miter"/>
+                            <path d="M 0 -2 L 6 4 L 0 13 L -6 4 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="miter"/>
+                        </g>
+                        
+                        <!-- Text positioned with bigger icon -->
+                        <text x="65" y="48" font-family="'Righteous', cursive" font-size="36" fill="#1a1a1a" text-anchor="start" letter-spacing="1">HosTechnology</text>
+                    </svg>
+                </div>
+                
+                <!-- Icon Only -->
+                <div class="logo-card">
+                    <h5>Icon Mark</h5>
+                    <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(60, 30)">
+                            <path d="M 0 0 L 20 15 L 0 35 L -20 15 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="2"/>
+                            <path d="M 0 15 L 15 25 L 0 40 L -15 25 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <path d="M 0 25 L 10 32 L 0 43 L -10 32 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                    </svg>
+                </div>
+                
+                <!-- Wordmark Only -->
+                <div class="logo-card">
+                    <h5>Wordmark Only</h5>
+                    <svg width="360" height="80" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+                        <text x="180" y="50" font-family="'Righteous', cursive" font-size="48" fill="#1a1a1a" text-anchor="middle" letter-spacing="2">HosTechnology</text>
+                    </svg>
+                </div>
+                
+                <!-- Light Background -->
+                <div class="logo-card" style="background: linear-gradient(135deg, #e8f5e9 0%, #dcedc8 100%);">
+                    <h5>On Light Background</h5>
+                    <svg width="300" height="120" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(250, 40)">
+                            <path d="M 0 0 L 20 15 L 0 35 L -20 15 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="2"/>
+                            <path d="M 0 15 L 15 25 L 0 40 L -15 25 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <path d="M 0 25 L 10 32 L 0 43 L -10 32 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                        <g transform="translate(250, 130)">
+                            <text x="0" y="0" font-family="'Righteous', cursive" font-size="42" fill="#1a1a1a" text-anchor="middle" letter-spacing="2">HosTechnology</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 5: COLOR PALETTE -->
+    <div class="page content">
+        <div class="content-full">
+            <h3>Color Palette</h3>
+            <h4 style="margin-bottom: 30px;">Primary - Airy Green</h4>
+            
+            <div class="color-grid">
+                <div class="color-swatch" style="background: #aed581; color: #1a1a1a;">
+                    <div class="color-name">Light Green</div>
+                    <div class="color-hex">#AED581</div>
+                    <div class="color-usage">Highlights</div>
+                </div>
+                <div class="color-swatch" style="background: #9ccc65; color: #1a1a1a;">
+                    <div class="color-name">Primary Green</div>
+                    <div class="color-hex">#9CCC65</div>
+                    <div class="color-usage">Main Brand</div>
+                </div>
+                <div class="color-swatch" style="background: #8bc34a; color: #ffffff;">
+                    <div class="color-name">Medium Green</div>
+                    <div class="color-hex">#8BC34A</div>
+                    <div class="color-usage">Accents</div>
+                </div>
+                <div class="color-swatch" style="background: #7cb342; color: #ffffff;">
+                    <div class="color-name">Dark Green</div>
+                    <div class="color-hex">#7CB342</div>
+                    <div class="color-usage">Text Accent</div>
+                </div>
+                <div class="color-swatch" style="background: #1a1a1a; color: #aed581;">
+                    <div class="color-name">Black</div>
+                    <div class="color-hex">#1A1A1A</div>
+                    <div class="color-usage">Primary Text</div>
+                </div>
+                <div class="color-swatch" style="background: #666666; color: #ffffff;">
+                    <div class="color-name">Gray</div>
+                    <div class="color-hex">#666666</div>
+                    <div class="color-usage">Body Text</div>
+                </div>
+                <div class="color-swatch" style="background: #e8f5e9; color: #1a1a1a;">
+                    <div class="color-name">Light BG</div>
+                    <div class="color-hex">#E8F5E9</div>
+                    <div class="color-usage">Backgrounds</div>
+                </div>
+                <div class="color-swatch" style="background: #ffffff; color: #1a1a1a; border-color: #aed581;">
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                    <div class="color-usage">Cards, Panels</div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px;">
+                <h4>Alternate Palettes</h4>
+                <p>Three additional approachable color palettes for flexibility across different contexts and applications.</p>
+                
+                <div class="color-grid" style="margin-top: 30px;">
+                    <div class="color-swatch" style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); color: #1a1a1a; border-color: #ffb74d;">
+                        <div class="color-name">Warm Peach</div>
+                        <div class="color-usage">Friendly & Energetic</div>
+                    </div>
+                    <div class="color-swatch" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); color: #1a1a1a; border-color: #64b5f6;">
+                        <div class="color-name">Soft Sky</div>
+                        <div class="color-usage">Calm & Trustworthy</div>
+                    </div>
+                    <div class="color-swatch" style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); color: #1a1a1a; border-color: #ba68c8;">
+                        <div class="color-name">Soft Lavender</div>
+                        <div class="color-usage">Creative & Inclusive</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 6: TYPOGRAPHY -->
+    <div class="page content">
+        <div class="content-full">
+            <h3>Typography</h3>
+            
+            <div class="type-specimen">
+                <div class="type-display" style="font-family: 'Righteous', cursive; font-size: 64px; color: #1a1a1a;">
+                    HosTechnology
+                </div>
+                <div class="type-info">
+                    Righteous • Bold • Primary Wordmark & Headlines
+                </div>
+            </div>
+            
+            <div class="type-specimen">
+                <div class="type-display" style="font-family: 'Righteous', cursive; font-size: 48px; color: #1a1a1a;">
+                    Building Automation Together
+                </div>
+                <div class="type-info">
+                    Righteous • Bold • 48px • Display Headings
+                </div>
+            </div>
+            
+            <div class="type-specimen">
+                <div class="type-display" style="font-family: 'Space Mono', monospace; font-size: 14px; font-weight: 700; color: #7cb342; letter-spacing: 3px;">
+                    AUTOMATION FOR COMMUNITY
+                </div>
+                <div class="type-info">
+                    Space Mono • Bold • 14px • All Caps • Taglines & Labels
+                </div>
+            </div>
+            
+            <div class="type-specimen">
+                <div class="type-display" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; color: #666; line-height: 1.8;">
+                    Body copy uses Inter Regular at 16px with 1.8 line height for optimal readability. This maintains a modern, clean aesthetic while remaining highly legible and approachable. Inter is specifically designed for user interfaces and long-form reading on screens.
+                </div>
+                <div class="type-info">
+                    Inter • Regular • 16px • 1.8 line height • Body Text
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <h4>Type Hierarchy</h4>
+                <p><strong>Display:</strong> Righteous Bold, 48-72px<br>
+                <strong>Headings:</strong> Righteous Bold, 24-36px<br>
+                <strong>Subheads:</strong> Space Mono Bold, 14-18px, All Caps<br>
+                <strong>Body:</strong> Inter Regular, 14-16px<br>
+                <strong>Captions:</strong> Inter Regular, 11-12px</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 7: APPLICATIONS -->
+    <div class="page content">
+        <div class="content-full">
+            <h3>Applications</h3>
+            
+            <div class="app-grid">
+                <!-- Business Card -->
+                <div class="app-card">
+                    <h5>Business Card</h5>
+                    <div style="width: 100%; aspect-ratio: 1.75; background: linear-gradient(135deg, #e8f5e9 0%, #dcedc8 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px solid #aed581;">
+                        <svg width="120" height="80" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(150, 30)">
+                                <path d="M 0 0 L 12 9 L 0 21 L -12 9 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="1.2"/>
+                                <path d="M 0 9 L 9 15 L 0 24 L -9 15 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="1"/>
+                                <path d="M 0 15 L 6 19 L 0 26 L -6 19 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="1"/>
+                            </g>
+                            <text x="150" y="90" font-family="'Righteous', cursive" font-size="26" fill="#1a1a1a" text-anchor="middle" letter-spacing="1">HosTechnology</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Website Header -->
+                <div class="app-card">
+                    <h5>Website Header</h5>
+                    <div style="width: 100%; aspect-ratio: 3; background: white; border-radius: 8px; display: flex; align-items: center; padding: 0 20px; border: 1px solid #e0e0e0;">
+                        <svg width="200" height="50" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(60, 50)">
+                                <path d="M 0 -8 L 8 0 L 0 10 L -8 0 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="1"/>
+                                <path d="M 0 0 L 6 5 L 0 12 L -6 5 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="0.8"/>
+                                <path d="M 0 5 L 4 8 L 0 13 L -4 8 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="0.8"/>
+                            </g>
+                            <text x="130" y="58" font-family="'Righteous', cursive" font-size="28" fill="#1a1a1a" text-anchor="start" letter-spacing="1">HosTechnology</text>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="app-card">
+                    <h5>Social Media Avatar</h5>
+                    <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #e8f5e9 0%, #dcedc8 100%); border-radius: 60px; display: flex; align-items: center; justify-content: center; border: 2px solid #aed581; margin: 0 auto;">
+                        <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(60, 30)">
+                                <path d="M 0 0 L 16 12 L 0 28 L -16 12 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="1.5"/>
+                                <path d="M 0 12 L 12 20 L 0 32 L -12 20 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="1.2"/>
+                                <path d="M 0 20 L 8 26 L 0 34 L -8 26 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="1.2"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px;">
+                <h4>Usage Guidelines</h4>
+                <div class="content-grid" style="gap: 40px;">
+                    <div>
+                        <p><strong>Clear Space:</strong> Maintain minimum clear space around logo equal to the height of one diamond.</p>
+                        <p><strong>Minimum Size:</strong> Never reproduce logo smaller than 120px width for digital, 1 inch for print.</p>
+                    </div>
+                    <div>
+                        <p><strong>Backgrounds:</strong> Primary logo works best on light backgrounds. Use sufficient contrast for readability.</p>
+                        <p><strong>Don'ts:</strong> Never rotate, skew, or distort the logo. Never change colors outside approved palette. Never add effects or shadows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 8: BRAND VOICE -->
+    <div class="page content">
+        <div class="content-full">
+            <h3>Brand Voice & Positioning</h3>
+            
+            <div class="content-grid" style="gap: 40px; margin-top: 40px;">
+                <div>
+                    <h4>We Are</h4>
+                    <p>• Approachable technical experts<br>
+                    • Embedded problem solvers<br>
+                    • Community-focused builders<br>
+                    • Optimistic about technology<br>
+                    • Sustainable and thoughtful</p>
+                </div>
+                
+                <div>
+                    <h4>We Are Not</h4>
+                    <p>• Corporate consultants<br>
+                    • Tech evangelists<br>
+                    • One-size-fits-all solutions<br>
+                    • Intimidating or condescending<br>
+                    • Extractive or exploitative</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px;">
+                <h4>Tone of Voice</h4>
+                <p><strong>Knowledgeable but not arrogant.</strong> We share technical expertise in clear, accessible language. We meet clients where they are and build solutions around their existing workflows.</p>
+                
+                <p style="margin-top: 20px;"><strong>Optimistic but realistic.</strong> We believe technology can multiply human capacity without replacing humans. We acknowledge challenges while focusing on achievable solutions.</p>
+                
+                <p style="margin-top: 20px;"><strong>Professional but warm.</strong> We're serious about quality work, but friendly in how we communicate. We use "we" language to emphasize collaboration.</p>
+            </div>
+            
+            <div style="margin-top: 60px;">
+                <h4>Key Messages</h4>
+                <p>• Modern technology practices shouldn't only be accessible to well-funded corporations<br>
+                • Small teams deserve the same force-multiplication that big companies get from automation<br>
+                • Using modern technology practices, you can do more with less<br>
+                • We build custom automation that works within your existing systems</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PAGE 9: FINAL -->
+    <div class="page cover">
+        <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 80px;">
+            <g transform="translate(90, 45)">
+                <path d="M 0 0 L 36 27 L 0 63 L -36 27 Z" fill="url(#primaryGreen)" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="miter"/>
+                <path d="M 0 27 L 27 45 L 0 72 L -27 45 Z" fill="#9ccc65" stroke="#1a1a1a" stroke-width="2.5" stroke-linejoin="miter"/>
+                <path d="M 0 45 L 18 58 L 0 77 L -18 58 Z" fill="#aed581" stroke="#1a1a1a" stroke-width="2.5" stroke-linejoin="miter"/>
+            </g>
+        </svg>
+        
+        <h1 style="font-size: 72px;">HosTechnology</h1>
+        <div class="tagline" style="font-size: 20px; margin-top: 20px;">hello@hostechnology.com</div>
+        <div class="tagline" style="margin-top: 10px;">hostechnology.com</div>
+    </div>
+    
+</body>
+</html>
