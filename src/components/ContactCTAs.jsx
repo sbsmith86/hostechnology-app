@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function ContactCTAs() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('shae@hostechnology.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section id="contact" className="py-20 bg-brand-bg">
       <div className="container mx-auto px-6">
@@ -9,7 +17,13 @@ export default function ContactCTAs() {
         </h2>
         <div className="max-w-xl mx-auto text-center">
           <p className="font-body text-lg text-body">
-            Start the conversation. Email me: <a href="mailto:shae@hostechnology.com" className="font-bold text-brand-dark hover:text-brand-darker underline underline-offset-4 transition-colors">shae@hostechnology.com</a>
+            Start the conversation. Email me:{' '}
+            <button
+              onClick={handleCopy}
+              className="font-bold text-brand-dark hover:text-brand-darker underline underline-offset-4 transition-colors cursor-pointer"
+            >
+              {copied ? 'Copied!' : 'shae@hostechnology.com'}
+            </button>
           </p>
         </div>
       </div>
