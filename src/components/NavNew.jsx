@@ -26,7 +26,7 @@ export default function NavNew() {
     <nav className="fixed top-0 left-0 right-0 bg-white z-50 border-b-2 border-brand-medium shadow-sm">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="flex items-center gap-1 font-headline font-extrabold text-2xl text-dark">
+          <a href="/" className="flex items-center gap-1 font-headline font-extrabold text-2xl text-dark">
             <DiamondMark size={32} />
             HosTechnology
           </a>

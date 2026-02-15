@@ -27,10 +27,10 @@ export default function FooterNew() {
           </p>
 
           <div className="flex justify-center space-x-6 mb-8">
-            <a href="mailto:hello@hostechnology.com" className="font-body text-gray-400 hover:text-brand-light transition-colors">
+            <a href="mailto:shae@hostechnology.com" className="font-body text-gray-400 hover:text-brand-light transition-colors">
               Email
             </a>
-            <a href="#" className="font-body text-gray-400 hover:text-brand-light transition-colors">
+            <a href="https://www.linkedin.com/in/shaebryantsmith/" className="font-body text-gray-400 hover:text-brand-light transition-colors" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
