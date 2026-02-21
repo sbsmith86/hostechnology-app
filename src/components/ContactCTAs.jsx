@@ -17,7 +17,7 @@ export default function ContactCTAs() {
         </h2>
         <div className="max-w-xl mx-auto text-center">
           <p className="font-body text-lg text-body">
-            Start the conversation. Email me:{' '}
+            Start the conversation. Email us:{' '}
             <button
               onClick={handleCopy}
               className="font-bold text-brand-dark hover:text-brand-darker underline underline-offset-4 transition-colors cursor-pointer"

@@ -22,15 +22,15 @@ export default function HeroNew() {
           </svg>
 
           <p className="font-mono font-bold text-sm tracking-[3px] text-brand-dark uppercase mb-6">
-            Automation for Community
+            Automation Consulting for Mission-Driven Organizations
           </p>
 
           <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-dark mb-8 leading-tight">
-            You shouldn't have to choose between impact and efficiency
+            Automation that works for teams of five and teams of five hundred.
           </h1>
 
           <p className="font-body text-xl md:text-2xl text-body mb-12 leading-relaxed max-w-3xl mx-auto">
-            I embed with nonprofits and community organizations to build automation solutions that actually work — so small teams can do more with less.
+            We build lean, effective automation for mission-driven organizations — regardless of budget or technical capacity.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -41,10 +41,10 @@ export default function HeroNew() {
               Let's Talk About Your Workflow
             </a>
             <a
-              href="#process"
+              href="#services"
               className="px-8 py-4 bg-transparent hover:bg-white text-dark font-body font-bold text-lg rounded-lg border-2 border-brand-medium transition-all"
             >
-              See How This Works
+              See What We Do
             </a>
           </div>
         </div>

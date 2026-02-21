@@ -4,35 +4,43 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-6">
+        <h2 className="font-headline font-bold text-4xl md:text-5xl text-center mb-4 text-dark">
+          Why HosTechnology
+        </h2>
+        <p className="text-center font-mono font-bold text-sm tracking-[2px] text-brand-dark uppercase mb-12">
+          The Perspective Behind the Work
+        </p>
+
         <div className="max-w-3xl mx-auto space-y-6 font-body text-lg text-body leading-relaxed">
           <p>
-            <strong className="font-headline font-bold text-2xl text-dark">I'm Shae.</strong> I've been a software engineer
-            for 15 years across industries from games to hospitality to nonprofit spaces.
-            I'm part of the LGBTQ community. I know what it's like to do mission-driven work
-            with zero resources.
+            Our founder has spent 15+ years as a full-stack engineer — building
+            automation for creative teams at major studios, shipping products across
+            games, healthcare, and food & beverage. That's the engineering depth.
           </p>
 
           <p>
-            Right now I'm a Creative Services Engineer at Epic Games, where I build automation
-            for creative teams. I learned something critical there: real solutions come from
-            sitting with people doing the work. Not being handed specs. Not building what I think
-            they need. Actually being there.
+            But the other half matters just as much: years of hands-on work in nonprofit
+            and community organizing spaces. Volunteering, organizing, seeing firsthand
+            what under-resourced teams actually deal with day to day. Not from a consulting
+            distance — from inside the work.
           </p>
 
           <p className="text-xl font-bold text-dark">
-            This is my mission: bringing the tools that corporations use to scale their work
-            to the people who are actually trying to make an impact.
+            That combination — serious engineering experience and real nonprofit
+            understanding — is what HosTechnology is built on. It's genuinely rare
+            in technology consulting.
           </p>
 
           <p>
-            I'm not interested in building products that sit on shelves. I'm interested in
-            sitting with you and making your work sustainable. AI doesn't have to be the doomsday
-            story — it can make one person feel like five. For under-resourced teams, that's transformative.
+            It means we don't build enterprise solutions and hope they fit smaller teams.
+            We build for your reality from the start — because we've lived it. We know
+            what it's like to need a tool and not have the budget, the staff, or the
+            time to figure it out.
           </p>
 
           <p className="font-bold text-dark">
-            But someone has to bring it to them. I'm done waiting for you to come to me.
-            Time to go to you.
+            That's why HosTechnology exists. Not to sell you software — to sit with
+            you and make your work sustainable.
           </p>
         </div>
       </div>

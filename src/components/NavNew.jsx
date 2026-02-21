@@ -32,8 +32,8 @@ export default function NavNew() {
           </a>
 
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#process" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
-              How I Work
+            <a href="#services" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
+              What We Do
             </a>
             <a href="#about" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
               About
@@ -63,11 +63,11 @@ export default function NavNew() {
         {isOpen && (
           <div className="md:hidden mt-4 space-y-4 pb-4">
             <a
-              href="#process"
+              href="#services"
               className="block font-body font-semibold text-dark hover:text-brand-dark transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              How I Work
+              What We Do
             </a>
             <a
               href="#about"

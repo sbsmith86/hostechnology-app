@@ -26,7 +26,7 @@ export default function Examples() {
           What This Could Look Like
         </h2>
         <p className="text-center font-mono font-bold text-sm tracking-[2px] text-brand-dark uppercase mb-16">
-          Here's the kind of work I'm built for
+          Here's the kind of work we're built for
         </p>
 
         <div className="max-w-5xl mx-auto space-y-8">

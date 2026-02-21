@@ -23,7 +23,7 @@ export default function FooterNew() {
 
           <h3 className="font-headline font-bold text-3xl mb-2">HosTechnology</h3>
           <p className="font-mono font-bold text-xs tracking-[3px] text-brand-light uppercase mb-8">
-            Automation for Community
+            Automation Consulting for Mission-Driven Organizations
           </p>
 
           <div className="flex justify-center space-x-6 mb-8">

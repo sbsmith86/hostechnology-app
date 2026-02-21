@@ -7,32 +7,34 @@ export default function ProblemSection() {
         <div className="max-w-4xl mx-auto">
           <div className="space-y-8 font-body text-lg md:text-xl leading-relaxed text-body">
             <p className="font-headline font-bold text-3xl text-dark">
-              You're doing the work of five people.
+              The automation gap is widening.
             </p>
 
             <p>
-              You're managing programs, tracking data in spreadsheets, responding to emails,
-              coordinating volunteers, writing reports. You know there's a better way — you
-              just don't have time to figure it out.
+              Every day there are new tools that can save teams hours of manual work —
+              but accessing them usually requires budgets, technical staff, or both.
+              The organizations that could benefit the most are often the last to get them.
             </p>
 
             <p>
-              Meanwhile, large corporations are using AI to 10x their capabilities.
-              They're investing billions, automating everything they can touch.
+              Meanwhile, you're still managing programs, tracking data in spreadsheets,
+              responding to emails, coordinating volunteers, writing reports. The teams
+              doing the hardest, most important work are usually the ones with the fewest
+              resources to fix it.
             </p>
 
             <p className="font-headline font-bold text-3xl text-dark">
-              The gap is widening.
+              That gap doesn't have to keep growing.
             </p>
 
             <p>
-              Every day, the distance grows between organizations that have access to modern tools
-              and the ones still doing everything by hand. The irony is that the teams doing the
-              hardest, most important work are usually the ones with the fewest resources to fix it.
+              We know because we've been there — doing mission-driven work with limited
+              resources, watching the same problems go unsolved because nobody was building
+              with teams like yours in mind.
             </p>
 
             <p className="font-headline font-bold text-3xl text-brand-dark">
-              You shouldn't be left behind because nobody's bringing these tools to you.
+              HosTechnology exists to close that gap.
             </p>
           </div>
         </div>
