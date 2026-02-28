@@ -36,7 +36,7 @@ export default function NavNew() {
               What We Do
             </a>
             <a href="#opsready" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
-              OpsReady
+              Our Tools
             </a>
             <a href="#about" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
               About
@@ -77,7 +77,7 @@ export default function NavNew() {
               className="block font-body font-semibold text-dark hover:text-brand-dark transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              OpsReady
+              Our Tools
             </a>
             <a
               href="#about"

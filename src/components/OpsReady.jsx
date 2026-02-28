@@ -1,146 +1,86 @@
 import React from 'react';
 
 export default function OpsReady() {
-  const features = [
-    {
-      label: "Ask in Slack",
-      headline: "Your team asks questions where they already work.",
-      body: "No new app to learn. No login to remember. Staff ask questions in Slack and get answers pulled directly from your organization's own documents."
-    },
-    {
-      label: "Grounded Answers",
-      headline: "It only answers from what you've documented.",
-      body: "OpsReady doesn't make things up. If the answer is in your files, it gives it to you with a citation. If it's not, it says so — honestly."
-    },
-    {
-      label: "Knowledge Gaps",
-      headline: "It tracks what your team needs but doesn't have yet.",
-      body: "Every time OpsReady can't answer a question, it logs it. Over time, you see exactly which policies, processes, and procedures your org still needs to write down."
-    },
-    {
-      label: "Your Docs, Your Space",
-      headline: "Each org gets their own private, isolated setup.",
-      body: "Your documents stay yours. Nothing is shared between organizations. Upload your files through a simple, branded page — and your team can start asking questions right away."
-    }
-  ];
-
   return (
-    <section id="opsready" className="py-20 bg-brand-bg">
+    <section id="opsready" className="py-20 bg-white">
       <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
 
-        {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <p className="font-mono font-bold text-sm tracking-[2px] text-brand-dark uppercase mb-4">
-            Built by HosTechnology
+          {/* Label */}
+          <p className="text-center font-mono font-bold text-sm tracking-[2px] text-brand-dark uppercase mb-4">
+            From Our Toolkit
           </p>
-          <h2 className="font-headline font-bold text-4xl md:text-5xl text-dark mb-6">
+          <h2 className="font-headline font-bold text-4xl md:text-5xl text-center mb-6 text-dark">
             OpsReady
           </h2>
-          <p className="font-body text-xl text-body leading-relaxed">
-            A private AI assistant that lives in your Slack workspace and answers
-            questions from your organization's own documents. No training required.
-            No new tools to adopt. Just ask.
+          <p className="text-center font-body text-xl text-body leading-relaxed mb-12 max-w-2xl mx-auto">
+            One example of what we build — a Slack-based assistant that answers
+            your team's questions using your own documents.
           </p>
-        </div>
 
-        {/* The Problem It Solves */}
-        <div className="max-w-3xl mx-auto mb-16">
-          <div className="bg-white p-8 md:p-10 rounded-2xl border-2 border-brand-light">
-            <h3 className="font-headline font-bold text-2xl text-dark mb-4">
-              The problem it solves
+          {/* The scenario — matches Examples.jsx tone */}
+          <div className="bg-brand-bg p-8 md:p-10 rounded-xl border-l-4 border-brand-medium mb-8">
+            <h3 className="font-headline font-bold text-2xl mb-4 text-dark">
+              The "Where do I find that?" problem
             </h3>
-            <p className="font-body text-lg text-body leading-relaxed mb-4">
-              Your team has policies, handbooks, onboarding guides, and process
-              documents — but nobody can find anything when they need it. New staff
-              ask the same questions. Veteran staff answer them over and over. Institutional
-              knowledge lives in people's heads instead of somewhere the whole team can access it.
+            <p className="font-body text-lg text-body mb-4 leading-relaxed">
+              Your org has policies, handbooks, onboarding guides, and process
+              documents scattered across shared drives. New staff ask the same
+              questions. Veteran staff answer them over and over. Nobody can find
+              anything when they actually need it.
             </p>
             <p className="font-body text-xl font-bold text-brand-dark">
-              OpsReady turns your existing documents into a team resource that
-              anyone can search by just asking a question in Slack.
+              We built a tool that lets your team ask questions in Slack and get
+              answers pulled directly from your own files — with citations. When
+              it doesn't know something, it says so and logs the gap so you know
+              what to document next.
             </p>
           </div>
-        </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-2xl border-2 border-brand-light hover:-translate-y-2 transition-transform"
-            >
-              <p className="font-mono font-bold text-xs tracking-[2px] text-brand-dark uppercase mb-3">
-                {feature.label}
-              </p>
-              <h3 className="font-headline font-bold text-xl mb-3 text-dark">
-                {feature.headline}
-              </h3>
+          {/* What makes it different — brief, consulting-framed */}
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-brand-bg p-6 rounded-xl">
+              <h4 className="font-headline font-bold text-lg text-dark mb-2">
+                No new tools
+              </h4>
               <p className="font-body text-base text-body leading-relaxed">
-                {feature.body}
+                It works inside Slack — where your team already is. Nothing to install, no logins to manage.
               </p>
             </div>
-          ))}
-        </div>
-
-        {/* How It Works (plain language) */}
-        <div className="max-w-3xl mx-auto mb-16">
-          <h3 className="font-headline font-bold text-3xl text-center text-dark mb-10">
-            How it works
-          </h3>
-          <div className="space-y-6">
-            {[
-              {
-                step: "01",
-                title: "Upload your documents",
-                body: "Policies, handbooks, process guides, FAQs — anything your team needs to reference. We give you a simple upload page branded to your organization."
-              },
-              {
-                step: "02",
-                title: "Your team asks questions in Slack",
-                body: "Mention @OpsReady in any channel or send it a direct message. \"What's our PTO policy?\" \"How do we submit a reimbursement?\" \"Who handles volunteer onboarding?\""
-              },
-              {
-                step: "03",
-                title: "OpsReady answers from your documents",
-                body: "It finds the relevant section, gives a clear answer, and tells you exactly which document it came from. No guessing. No making things up."
-              },
-              {
-                step: "04",
-                title: "Gaps get tracked automatically",
-                body: "When someone asks something that isn't documented yet, OpsReady logs it. You get a clear picture of what your team needs — and can fill those gaps over time."
-              }
-            ].map((item, index) => (
-              <div key={index} className="flex gap-6 items-start">
-                <span className="font-mono font-bold text-2xl text-brand-medium shrink-0 w-10">
-                  {item.step}
-                </span>
-                <div>
-                  <h4 className="font-headline font-bold text-xl text-dark mb-1">
-                    {item.title}
-                  </h4>
-                  <p className="font-body text-base text-body leading-relaxed">
-                    {item.body}
-                  </p>
-                </div>
-              </div>
-            ))}
+            <div className="bg-brand-bg p-6 rounded-xl">
+              <h4 className="font-headline font-bold text-lg text-dark mb-2">
+                Honest by design
+              </h4>
+              <p className="font-body text-base text-body leading-relaxed">
+                It only answers from what you've documented. It won't make things up or speculate.
+              </p>
+            </div>
+            <div className="bg-brand-bg p-6 rounded-xl">
+              <h4 className="font-headline font-bold text-lg text-dark mb-2">
+                Gets smarter over time
+              </h4>
+              <p className="font-body text-base text-body leading-relaxed">
+                Every unanswered question is tracked — so your org builds the documentation it actually needs.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <p className="font-body text-lg text-body mb-6">
-            OpsReady is maintained and deployed by HosTechnology. We handle
-            the setup. You just point your team to Slack.
-          </p>
-          <a
-            href="#contact"
-            className="inline-block px-8 py-4 bg-brand-medium hover:bg-brand-dark text-white font-body font-bold text-lg rounded-lg transition-all transform hover:scale-105"
-          >
-            Ask Us About OpsReady
-          </a>
-        </div>
+          {/* Consulting frame — this is the key reframe */}
+          <div className="text-center">
+            <p className="font-body text-lg text-body leading-relaxed max-w-2xl mx-auto mb-6">
+              OpsReady is one tool in our catalog. Whether it's the right fit
+              for your organization — or whether you need something different
+              entirely — starts with a conversation.
+            </p>
+            <a
+              href="#contact"
+              className="inline-block px-8 py-4 bg-brand-medium hover:bg-brand-dark text-white font-body font-bold text-lg rounded-lg transition-all transform hover:scale-105"
+            >
+              Let's Talk About What You Need
+            </a>
+          </div>
 
+        </div>
       </div>
     </section>
   );
