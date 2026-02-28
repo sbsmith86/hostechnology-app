@@ -16,6 +16,11 @@ export default function Examples() {
       title: "The 'We Don't Know What We Don't Know'",
       description: "You know things are inefficient but you can't pinpoint where. You don't need a product built — you need someone to sit with your team, map out what's happening, and show you what's possible with the tools you already have.",
       result: "Sometimes the biggest wins don't require any custom development at all."
+    },
+    {
+      title: "The 'Where Do I Find That?'",
+      description: "Your org has policies, handbooks, and process docs scattered across shared drives. New staff ask the same questions. Veteran staff answer them over and over. Nobody can find anything when they actually need it.",
+      result: "We built OpsReady — a tool that lets your team ask questions in Slack and get answers from your own documents, with citations. When it doesn't know something, it says so and logs the gap so you know what to document next."
     }
   ];
 

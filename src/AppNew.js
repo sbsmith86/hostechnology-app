@@ -4,7 +4,6 @@ import HeroNew from "./components/HeroNew";
 import ProblemSection from "./components/ProblemSection";
 import HowIWork from "./components/HowIWork";
 import Examples from "./components/Examples";
-import OpsReady from "./components/OpsReady";
 import WhoThisIsFor from "./components/WhoThisIsFor";
 import About from "./components/About";
 import ContactCTAs from "./components/ContactCTAs";
@@ -18,7 +17,6 @@ export default function AppNew() {
       <ProblemSection />
       <HowIWork />
       <Examples />
-      <OpsReady />
       <WhoThisIsFor />
       <About />
       <ContactCTAs />

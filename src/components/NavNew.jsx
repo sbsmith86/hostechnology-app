@@ -35,9 +35,6 @@ export default function NavNew() {
             <a href="#services" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
               What We Do
             </a>
-            <a href="#opsready" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
-              Our Tools
-            </a>
             <a href="#about" className="font-body font-semibold text-dark hover:text-brand-dark transition-colors">
               About
             </a>
@@ -71,13 +68,6 @@ export default function NavNew() {
               onClick={() => setIsOpen(false)}
             >
               What We Do
-            </a>
-            <a
-              href="#opsready"
-              className="block font-body font-semibold text-dark hover:text-brand-dark transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Our Tools
             </a>
             <a
               href="#about"
