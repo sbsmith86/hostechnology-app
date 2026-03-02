@@ -26,7 +26,7 @@ export default function HeroNew() {
           </p>
 
           <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-dark mb-8 leading-tight">
-            The work matters too much to lose hours to bad process.
+            The work matters. Automation and AI can help you do more of it.
           </h1>
 
           <p className="font-body text-xl md:text-2xl text-body mb-12 leading-relaxed max-w-3xl mx-auto">
