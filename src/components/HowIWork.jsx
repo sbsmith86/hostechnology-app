@@ -8,7 +8,7 @@ export default function HowIWork() {
     },
     {
       title: "AI INTEGRATION",
-      description: "We implement practical AI tools that enhance your team's capacity without requiring you to become a tech company. The right tool for the right problem, built to your constraints."
+      description: "AI can save your team real time — but only if it's set up for how you actually work. We help you identify where AI fits, implement it practically, and make sure your team understands and owns it. No black boxes. No buzzwords. From automating intake forms to summarizing donor reports to building internal tools that actually answer questions — enterprise-grade AI capabilities at nonprofit-scale budgets."
     },
     {
       title: "SYSTEMS CONSULTING",

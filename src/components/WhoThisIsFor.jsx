@@ -40,6 +40,9 @@ export default function WhoThisIsFor() {
           <p className="font-body text-xl md:text-2xl text-gray-300 leading-relaxed italic">
             We bring 15+ years of engineering experience and deep roots in nonprofit and community organizing work. <strong className="text-brand-light not-italic">We've been on both sides of this.</strong> That combination is genuinely rare in technology consulting — and it's what makes us useful.
           </p>
+          <p className="font-body text-lg text-gray-400 leading-relaxed mt-6">
+            Not sure if AI is right for your org? That's a valid question — and one we can help you answer honestly. We'll never recommend a tool you don't need.
+          </p>
         </blockquote>
       </div>
     </section>

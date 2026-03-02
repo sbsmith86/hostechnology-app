@@ -35,6 +35,10 @@ export default function FooterNew() {
             </a>
           </div>
 
+          <p className="font-body text-sm text-gray-400 max-w-lg mx-auto mb-6 leading-relaxed">
+            We believe the best technology serves people, not the other way around. Every tool we recommend — including AI — has to earn its place by saving your team time, money, or headaches.
+          </p>
+
           <p className="font-body text-sm text-gray-500">
             &copy; {new Date().getFullYear()} HosTechnology. Built with intention.
           </p>

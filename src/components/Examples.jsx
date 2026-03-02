@@ -21,6 +21,11 @@ export default function Examples() {
       title: "The 'Where Do I Find That?'",
       description: "Your org has policies, handbooks, and process docs scattered across shared drives. New staff ask the same questions. Veteran staff answer them over and over. Nobody can find anything when they actually need it.",
       result: "We built OpsReady — a tool that lets your team ask questions in Slack and get answers from your own documents, with citations. When it doesn't know something, it says so and logs the gap so you know what to document next."
+    },
+    {
+      title: "The Report Nobody Reads",
+      description: "Your team spends hours compiling a monthly impact report from spreadsheets, surveys, and emails. By the time it's done, it's outdated — and leadership skims it at best.",
+      result: "We built an AI-powered pipeline that pulls data from existing tools, drafts a summary, and delivers it to leadership weekly — cutting prep time by 80% and making the data actually useful."
     }
   ];
 

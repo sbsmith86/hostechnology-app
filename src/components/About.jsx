@@ -32,6 +32,14 @@ export default function About() {
           </p>
 
           <p>
+            We've also spent the last few years going deep on AI — not as trend-chasers,
+            but because we saw what it could do for teams that don't have dedicated
+            engineering departments. We bring the same rigor we applied at enterprise
+            scale to making AI work responsibly and practically for organizations where
+            every dollar and every hour matters.
+          </p>
+
+          <p>
             It means we don't build enterprise solutions and hope they fit smaller teams.
             We build for your reality from the start — because we've lived it. We know
             what it's like to need a tool and not have the budget, the staff, or the

@@ -23,6 +23,12 @@ export default function ProblemSection() {
               resources to fix it.
             </p>
 
+            <p>
+              And now, AI is accelerating that gap. Organizations with resources are using
+              it to do more with less — while under-resourced teams are left wondering
+              where to even start.
+            </p>
+
             <p className="font-headline font-bold text-3xl text-dark">
               That gap doesn't have to keep growing.
             </p>

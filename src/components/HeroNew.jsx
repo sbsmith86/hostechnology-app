@@ -30,7 +30,7 @@ export default function HeroNew() {
           </h1>
 
           <p className="font-body text-xl md:text-2xl text-body mb-12 leading-relaxed max-w-3xl mx-auto">
-            We build lean, effective automation for mission-driven organizations — regardless of budget or technical capacity.
+            We build lean, effective automation — powered by modern tools including AI — for mission-driven organizations, regardless of budget or technical capacity.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
