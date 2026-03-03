@@ -26,11 +26,11 @@ export default function HeroNew() {
           </p>
 
           <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-dark mb-8 leading-tight">
-            The work matters. Automation and AI can help you do more of it.
+            The work is the point.
           </h1>
 
           <p className="font-body text-xl md:text-2xl text-body mb-12 leading-relaxed max-w-3xl mx-auto">
-            We help nonprofits and grassroots organizations save time and cut costs with lean automation and practical AI — built for how you actually work.
+            We help nonprofits and grassroots organizations automate the rest — so your team can focus on what only humans can do.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
